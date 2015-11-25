@@ -1,0 +1,29 @@
+# Site settings
+title: Zetsu
+email: zetsu@domain.com
+description: Um lindo tema feito para jekyll e com o <3
+baseurl: ""
+url: "http://arcatraining"
+
+author:
+  name     : 'Fernando Moreira'
+  email    : caroline.guilherme@arcasolutions.com
+  url      : http://edirectory.com
+  facebook : http://facebook.com/arcasolutions
+  twitter  : http://twitter.com/arcasolutions
+
+github: https://github.com/arcatraining
+disqus_shortname: "arcasolutions"
+google_analytics: ""
+
+paginate: 20
+comments: true
+paginate_path: "/page/:num"
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Build settings
+markdown  : kramdown
+permalink : /:title/
