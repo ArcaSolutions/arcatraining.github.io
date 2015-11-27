@@ -1,12 +1,12 @@
 # Site settings
-title: Zetsu
-email: zetsu@domain.com
-description: Um lindo tema feito para jekyll e com o <3
+title: Arca Training
+email: caroline.guilherme@arcasolutions.com
+description: Tutorial for Developers about Arca Products
 baseurl: ""
 url: "http://arcatraining"
 
 author:
-  name     : 'Fernando Moreira'
+  name     : 'Arca Training'
   email    : caroline.guilherme@arcasolutions.com
   url      : http://edirectory.com
   facebook : http://facebook.com/arcasolutions
