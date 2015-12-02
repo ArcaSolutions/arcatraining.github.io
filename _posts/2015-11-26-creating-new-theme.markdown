@@ -26,6 +26,20 @@ liip_theme:
    active_theme: customtheme
 {% endhighlight %}
 
+Add the new theme to the config domain file `app/config/domain.yml`
+{% highlight ruby %}
+ edirectory-1100.arcasolutions.com:
+            id: 1
+            path: custom/domain_2/
+            template: customtheme
+            locale: en_us
+            localized: en
+            database: edirectory-domain_1
+            elastic: edirectory-domain_1
+            title: eDirectoryY
+            branded: 'on'
+{% endhighlight %}
+
 Provide the code to enable the clients to change the colors as they want by creating the array configuration for the Color Options Feature in the file `web/conf/default_themecolors.inc.php`
 
 {% highlight php %}
