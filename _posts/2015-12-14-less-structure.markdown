@@ -14,9 +14,10 @@ tags: [edirectory, custom-design]
 eDirectory 11 is built with the Synfony structure to manage the files assets. In this case, [The Assetic library](http://symfony.com/doc/current/cookbook/assetic/index.html) is the responsible for creating the main style file, minimized to be included in the frontend pages. 
 
 Therefore, the eDirectory 11 creates 3 style files for the project: 
-* **style.css** -> The result from assetic compilation of all .less files. 
-* **colorscheme.css** -> This file is used when the customer uses the feature *Color Options* on Site Manager. 
-* **csseditor.css** -> Available when the customer uses the feature *CSS Editor* on Site Manager.
+
+1. **style.css** -> The result from assetic compilation of all .less files. 
+2. **colorscheme.css** -> This file is used when the customer uses the feature *Color Options* on Site Manager. 
+3. **csseditor.css** -> Available when the customer uses the feature *CSS Editor* on Site Manager.
 
 ---
 
