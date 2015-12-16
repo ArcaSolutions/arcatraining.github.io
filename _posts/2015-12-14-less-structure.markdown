@@ -1,11 +1,22 @@
 ---
 layout: post
-title:  "Less Structure"
+title:  "Starting a Style Customization"
 date:   2015-11-26 03:00:08
 categories: custom
 tags: [edirectory, custom-design]
 ---
 
+
+---
+
+## Introduction
+
+eDirectory 11 is built with the Synfony structure to manage the files assets. In this case, [The Assetic library](http://symfony.com/doc/current/cookbook/assetic/index.html) is the responsible for creating the main style file, minimized to be included in the frontend pages. 
+
+Therefore, the eDirectory 11 creates 3 style files for the project: 
+* **style.css** -> The result from assetic compilation of all .less files. 
+* **colorscheme.css** -> This file is used when the customer uses the feature *Color Options* on Site Manager. 
+* **csseditor.css** -> Available when the customer uses the feature *CSS Editor* on Site Manager.
 
 ---
 
@@ -41,7 +52,9 @@ This command will be waiting for any changes in the less files in the assets fol
 
 Any css file inside the path `app/Resources/themes/default/css/` will be added to the minimized file `style.css` 
 
-### Less Structure
+---
+
+## Less Structure
 The .less files are based on [Bootstrap Framework v3.3.4](https://github.com/twbs/bootstrap/releases/tag/v3.3.4) and only the main file is called by ASSETIC: `theme.less` (this file is the substitute for bootstrap.less) contains all @import including variables, mixins, plugins and resets. 
 
 Start by setting the characteristics of the layout in `variables.less`. 
@@ -99,4 +112,12 @@ Default eDirectory v11 Instalation:
 
 {% endhighlight %}
 
+---
 
+## Literature
+
+[How to Use Assetic for Asset Management](http://symfony.com/doc/current/cookbook/assetic/asset_management.html)
+
+[Assetic Guthub](https://github.com/kriswallsmith/assetic)
+
+[Getting started with Less](http://lesscss.org/)
